@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  carb_intake: 1
+  protien_intake: 1
+  fat_intake: 1
+  calories: 1
+  date: 2019-12-30
+
+two:
+  user_id: 1
+  carb_intake: 1
+  protien_intake: 1
+  fat_intake: 1
+  calories: 1
+  date: 2019-12-30

@@ -1,0 +1,2 @@
+class NutritionTracker < ApplicationRecord
+end

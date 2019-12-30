@@ -1,0 +1,2 @@
+class WorkoutTracker < ApplicationRecord
+end

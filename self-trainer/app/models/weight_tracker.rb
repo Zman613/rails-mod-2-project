@@ -1,0 +1,2 @@
+class WeightTracker < ApplicationRecord
+end

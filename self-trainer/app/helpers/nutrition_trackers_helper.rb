@@ -1,0 +1,2 @@
+module NutritionTrackersHelper
+end
