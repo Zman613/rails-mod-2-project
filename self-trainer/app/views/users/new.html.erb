@@ -1,0 +1,21 @@
+<% if flash[:messages]%>
+  <h2><%= flash[:messages].join(", ") + "." %></h2>
+<% end%>
+
+<%= form_for(@user) do |f| %>
+  <%= f.label :name, value='Username' %>
+  <%= f.text_field :name %>
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+  <%= f.label :password_comfirmation %>
+  <%= f.password_field :password_comfirmation %>
+  <%= f.label :age %>
+  <%= f.number_field :age %>
+  <%= f.label :height %>
+  <%= f.number_field :height %>
+  <%= f.label :start_weight, value='Current Weight' %>
+  <%= f.number_field :start_weight %>
+  <%= f.label :sex %>
+  <%= f.select :sex, (['Male', 'Female']) %>
+  <%= f.submit %>
+<% end %>

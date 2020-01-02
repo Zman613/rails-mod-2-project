@@ -1,0 +1,9 @@
+<h1>Your Personlized Plan</h1>
+<br>
+<h3>Your Total Calories Diet</h3>
+<%= @calories.round %>
+<h4>Carb Intake: <i><%= @carbs.round %>g</i></h4>
+<h4>Protein Intake: <i><%= @protein.round %>g</i></h4>
+<h4>Fat Intake: <i><%= @fat.round %>g</i></h4>
+<br>
+<%= button_to "User", user_path(@logged_in), method: :get %>

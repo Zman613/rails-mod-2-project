@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_30_205721) do
+ActiveRecord::Schema.define(version: 2020_01_02_055634) do
 
   create_table "diaries", force: :cascade do |t|
     t.integer "user_id"
@@ -58,7 +58,7 @@ ActiveRecord::Schema.define(version: 2019_12_30_205721) do
 
   create_table "users", force: :cascade do |t|
     t.string "name"
-    t.string "password"
+    t.string "password_digest"
     t.string "goal"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -66,6 +66,10 @@ ActiveRecord::Schema.define(version: 2019_12_30_205721) do
     t.integer "goal_weight"
     t.integer "age"
     t.integer "height"
+    t.string "level"
+    t.string "sex"
+    t.float "active"
+    t.float "fat", default: 0.4
   end
 
   create_table "weight_trackers", force: :cascade do |t|
